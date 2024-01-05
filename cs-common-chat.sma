@@ -8,11 +8,11 @@
 /*
 	За основу взят плагин Telegram MSG 1.2.0 by ex3m777
 	
-	Для работы вставте соответсвующие *параметры* в g_URL, vk_URL и vk_admin_URL
+	Для работы вставьте соответсвующее *параметры* в g_URL, vk_URL и vk_admin_URL
 */
 
 
-//#define SLEEP_TIME          // закоментируйте если вам не нужен ночной режим, когда сообщения не будут приходить
+//#define SLEEP_TIME          // закомментируйте если вам не нужен ночной режим, когда сообщения не будут приходить
 
 #if defined SLEEP_TIME
 const g_Start_Time = 00       // Время начала ночного режима
@@ -21,9 +21,9 @@ const g_End_Time = 10         // Время конца ночного режим
 
 
 new const DELAY = 10;   // Анти-спам в секундах. 
-new const g_URL[] = "https://api.telegram.org/*ТОКЕН БОТА ТГ*/sendmessage?chat_id=*ID ЧАТА ТГ*&text=";
-new const vk_URL[] = "https://api.vk.com/method/messages.send?access_token=*ТОКЕН ВК БОТА*&v=5.131&peer_id=*PEER_ID (ID ЧАТА В ВК)*&random_id="
-new const vk_admin_URL[] = "https://api.vk.com/method/messages.send?access_token=*ТОКЕН ВК БОТА*&v=5.131&peer_id=*PEER_ID (ID АДМИНСКОГО ЧАТА В ВК)*&random_id="
+new const g_URL[] = "https://api.telegram.org/*TG_TOKEN*/sendmessage?chat_id=*TG_CHAT_ID*&text=";
+new const vk_URL[] = "https://api.vk.com/method/messages.send?access_token=*VK_TOKEN*&v=5.131&peer_id=*VK_PEER_ID*&random_id="
+new const vk_admin_URL[] = "https://api.vk.com/method/messages.send?access_token=*VK_TOKEN*&v=5.131&peer_id=*VK_ADMIN_PEER_ID*&random_id="
 new Float:g_flNextTime[33];
 new const LANG_NAME[] = "telegram.txt"
 

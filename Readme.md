@@ -6,6 +6,14 @@
 - `/all` - отправить сообщение в чаты ВК и ТГ
 - `/admchat` - отправить сообщение в админский чат ВК
 
-Для возможности отправки сообщений из чатов ВК и ТГ на сервер необходим [cs-common-chat-bot](https://hub.docker.com/repository/docker/dgaponov99/cs-common-chat-bot/)
+### Требования:
+- Для возможности отправки сообщений из чатов ВК и ТГ на сервер необходим [cs-common-chat-bot](https://hub.docker.com/repository/docker/dgaponov99/cs-common-chat-bot/)
+- 
+### Параметры (указываются в sma в g_URL, vk_URL и vk_admin_URL):
+- `TG_TOKEN` Токен бота ТГ
+- `TG_CHAT_ID` ID чата в ТГ (ex. -1001234567890)
+- `VK_TOKEN` Токен бота ВК
+- `VK_PEER_ID` ID чата в ВК для бота (ex. 2000000001)
+- `VK_ADMIN_PEER_ID` ID админского чата в ВК для бота (ex. 2000000002)
 
 За основу взят плагин Telegram MSG 1.2.0 by ex3m777
